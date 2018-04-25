@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Coin_Toss" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="zVN-Qa-Cen">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FCY-Nx-fP2">
+                                <rect key="frame" x="64" y="380" width="192" height="100"/>
+                                <state key="normal" backgroundImage="Flip Coin Button Background">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Flip Coin">
+                                            <attributes>
+                                                <color key="NSColor" red="0.77167424890730119" green="0.79728188779619003" blue="0.77558049890730119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="36" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="coinTossButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="5lG-i6-0Dk"/>
+                                    <action selector="coinTossButton" destination="BYZ-38-t0r" eventType="touchDragOutside" id="6ae-W6-UF9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip: Press and drag  up the button to toss the coin higher!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="reK-6B-fuH">
+                                <rect key="frame" x="16" y="155.5" width="288" height="45.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <color key="textColor" red="0.70781792534722221" green="0.79728188779619003" blue="0.77558049890730119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heads or Tails?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGc-Vm-YWy">
+                                <rect key="frame" x="38" y="494" width="245" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <color key="textColor" red="0.63891047901111109" green="0.83851453993055558" blue="0.58272714747222221" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Heads" translatesAutoresizingMaskIntoConstraints="NO" id="8tg-Hc-P7n">
+                                <rect key="frame" x="42" y="224" width="237" height="159"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="reK-6B-fuH" secondAttribute="trailing" constant="16" id="9RF-PP-Vg2"/>
+                            <constraint firstItem="zVN-Qa-Cen" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9o9-kA-CXl"/>
+                            <constraint firstItem="reK-6B-fuH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="KMt-fG-7FI"/>
+                            <constraint firstItem="8tg-Hc-P7n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="L9A-dN-duR"/>
+                            <constraint firstItem="eGc-Vm-YWy" firstAttribute="centerX" secondItem="FCY-Nx-fP2" secondAttribute="centerX" id="MaR-f3-kVr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eGc-Vm-YWy" secondAttribute="trailing" id="RCK-2H-Rbc"/>
+                            <constraint firstItem="FCY-Nx-fP2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="S1r-tU-5wc"/>
+                            <constraint firstItem="eGc-Vm-YWy" firstAttribute="top" secondItem="FCY-Nx-fP2" secondAttribute="bottom" constant="14" id="T5y-75-OoT"/>
+                            <constraint firstItem="FCY-Nx-fP2" firstAttribute="top" secondItem="8tg-Hc-P7n" secondAttribute="bottom" constant="-3" id="TYY-Yj-O2Q"/>
+                            <constraint firstItem="zVN-Qa-Cen" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="U53-OI-TsW"/>
+                            <constraint firstItem="eGc-Vm-YWy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WNI-YA-KST"/>
+                            <constraint firstItem="zVN-Qa-Cen" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="WhB-hi-fKj"/>
+                            <constraint firstItem="zVN-Qa-Cen" firstAttribute="top" secondItem="reK-6B-fuH" secondAttribute="bottom" constant="-201" id="YYF-VB-SD4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8tg-Hc-P7n" secondAttribute="trailing" constant="41" id="aW5-E0-nSe"/>
+                            <constraint firstItem="zVN-Qa-Cen" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bGw-xB-kPv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FCY-Nx-fP2" secondAttribute="trailing" constant="64" id="bwr-Ui-Wei"/>
+                            <constraint firstItem="8tg-Hc-P7n" firstAttribute="top" secondItem="reK-6B-fuH" secondAttribute="bottom" constant="23" id="mlR-v8-14A"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eGc-Vm-YWy" secondAttribute="bottom" constant="32" id="mog-M5-vTm"/>
+                            <constraint firstItem="zVN-Qa-Cen" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tiz-24-7PZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zVN-Qa-Cen" secondAttribute="trailing" id="uRK-G2-Joh"/>
+                            <constraint firstItem="FCY-Nx-fP2" firstAttribute="top" secondItem="8tg-Hc-P7n" secondAttribute="bottom" constant="-3" id="vKa-DG-vyf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="coinImageView" destination="8tg-Hc-P7n" id="04V-K1-eqr"/>
+                        <outlet property="headsOrTailsLabel" destination="eGc-Vm-YWy" id="Vc4-qM-oIC"/>
+                        <outlet property="tipLabelDisplay" destination="reK-6B-fuH" id="eqN-dg-tyL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="110.625" y="115.14084507042254"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="444" height="414"/>
+        <image name="Flip Coin Button Background" width="300" height="100"/>
+        <image name="Heads" width="1600" height="1600"/>
+    </resources>
+</document>
